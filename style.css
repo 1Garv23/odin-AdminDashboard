@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 li{
     list-style-type: none;
     padding:0;
@@ -14,6 +17,7 @@ li{
     display:flex;
     flex-direction: column;
     gap: 20px;
+    background-color: #0ea5e9;
 }
 /* making the inner grid for header */
 .header{
@@ -23,13 +27,48 @@ li{
 
 .main-content{
     display:flex;
+    padding:20px;
+    gap:20px;
+    background-color: #d1d5db;
 }
 .projects{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.project{
+    background-color: white;
+    border-left: 5px solid #fde047;
+}
+.announcement{
+    background-color: white;
+}
+.trending{
+    background-color: white;
 }
 .wrapper{
     display:flex;
     flex-direction: column;
     gap:25px;
+}
+
+.greeting{
+    justify-self: center;
+}
+input{
+    width:70%;
+}
+form{
+    align-self: center;
+}
+.buttons{
+    align-self:center;
+}
+button{
+    background-color: #0ea5e9;
+    color:white;
+    border:none;
+    border-radius:10%;
+    width:30%;
 }
