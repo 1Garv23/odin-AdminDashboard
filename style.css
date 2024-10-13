@@ -1,3 +1,8 @@
+li{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
 
 /* outer-most grid layout */
 .container{
@@ -5,6 +10,26 @@
     grid-template-columns:minmax(100px,1fr) minmax(400px,4fr);
 }
 .dashboard{
-    grid-row: 1/3;
+    grid-row:1/3;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* making the inner grid for header */
+.header{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
 }
 
+.main-content{
+    display:flex;
+}
+.projects{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.wrapper{
+    display:flex;
+    flex-direction: column;
+    gap:25px;
+}
