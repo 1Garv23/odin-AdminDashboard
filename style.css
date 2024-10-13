@@ -1,0 +1,10 @@
+
+/* outer-most grid layout */
+.container{
+    display:grid;
+    grid-template-columns:minmax(100px,1fr) minmax(400px,4fr);
+}
+.dashboard{
+    grid-row: 1/3;
+}
+
